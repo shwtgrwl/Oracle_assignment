@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  time_series_eda_app:
+    build: .
+    container_name: time_series_eda_app
+    volumes:
+      - .:/app
+    command: python time_series_eda.py
